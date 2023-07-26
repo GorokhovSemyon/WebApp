@@ -1,0 +1,451 @@
+/*................................................................................................*/
+/*...........................................header...............................................*/
+/*................................................................................................*/
+body{
+	font-family: "Roboto", sans-serif;
+	background: linear-gradient(to bottom right, #585858, #111111);
+    background-attachment: fixed;
+  margin: 0 0;
+}
+
+a.back_1 img
+{
+    height: 68px;
+    cursor: pointer;
+    position: absolute;
+	margin-top: 66px;
+	margin-left: 94px;
+}
+
+header{
+	position: relative;
+	height: 1024px;
+	width: 1440px;
+	background:  url(../img/handsome-man-at-barbershop-shaving-beard.svg);
+	background-repeat: no-repeat;
+	background-position:center center;
+}
+
+header div.navigation {
+  margin: 0 auto;;
+}
+
+header nav{
+	width: 100%;
+/*    max-width: 1000px;*/
+  max-width: 1400px;
+  padding: 0;
+  margin: 0 auto;
+/*    margin: 0 auto;*/
+}
+header nav ul{
+	list-style-type: none;
+	margin-top: 76px;
+	padding: 0;
+}
+
+header nav ul li{
+  display: inline-block;
+  float: left;
+	width: 230px;
+  text-align: center;
+}
+
+
+header nav ul li a{
+	color: rgba(240, 162, 77, 1);
+	font-size: 30px;
+	font-weight: 400;
+	line-height: 35px;
+	text-decoration: none;
+}
+
+header nav ul li a:hover{
+/*	font-size: 32px;*/
+    text-decoration: underline;
+}
+
+header nav ul li a.EntrLK{
+	background: url(../img/Vector.svg);
+  background-repeat: no-repeat;
+	display: inline-block; 
+  width: 37.5px; 
+  height: 37.5px; 
+  margin-left: 50px;
+}
+
+header nav ul li a.EntrLK1{
+  background: url(../img/Dom.svg);
+  background-repeat: no-repeat;
+  display: inline-block; 
+  width: 37.5px; 
+  height: 37.5px; 
+  margin-left: 50px;
+}
+
+/*header nav ul li a.EntrLK:active{
+	background: url(../img/Dom.svg);
+}*/
+
+
+header div.Logo h1 hr{
+    width: 821px;
+    border: 1px solid #F0A24D;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+header div.Logo h1{
+    margin: 155px auto 0;
+    text-align: center;
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 80px;
+    line-height: 106px;
+    letter-spacing: 0.04em;
+    color: #F0A24D;
+}
+header div.Logo_margin{
+    margin-bottom: 37px;
+    margin-top: 38px;
+}
+
+header div.Logo h2{
+    margin: 24px 0 0 0 ;
+    text-align: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 42px;
+    color: #FFC687;
+}
+
+div.Sign{
+	margin-top: 212px;
+  text-align: center;
+}
+a.Sign{
+	display:inline-block;
+	text-align: center;
+	border: 2px solid #F0A24D;
+  border-radius: 10px;
+  padding: 24px 101px;
+  font-family: 'Red Hat Display';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 40px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #F0A24D;
+}
+
+
+header nav.kontacts{
+	width: 100%;
+  max-width: 500px;
+  padding: 0;
+  margin: 0 auto;
+}
+header nav ul.kontacts{
+	list-style-type: none;
+/*	margin-top: 59px;*/
+	margin: 59px auto 0;
+	padding: 0;
+}
+header nav ul li.kontacts{
+	display: inline-block;
+	width: 80px;
+  text-align: center;
+}
+
+a.kontacts{
+	font-family: 'Red Hat Display';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  color: #F0A24D;
+}
+
+/*................................................................................................*/
+/*.....................................карта и телефон............................................*/
+/*................................................................................................*/
+
+section.container{
+    margin-top: 20px;
+    position: absolute;
+    padding: 0;
+    margin-left: auto;
+	margin-right: auto;
+}
+
+div.map1{
+  display: flex;
+	margin-left: auto;
+	margin-right: auto;
+  justify-content: center;
+}
+div.telephon{
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+}
+ span.telephon{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 42px;
+  color: #FFC687;
+}
+span.telephon a{
+  font-weight: 300;
+  color: #FFC687;
+  text-decoration: none;
+}
+span.telephon a:hover{
+  font-size: 22px;
+  text-decoration: underline;
+}
+
+
+/*................................................................................................*/
+/*.....................................адаптив 1000px............................................*/
+/*................................................................................................*/
+@media screen and (max-width: 1000px) {
+
+  header nav{
+    max-width: 800px;
+    padding: 0;
+    margin: 0 auto;
+  }
+ 
+  header nav ul li{
+    width: 170px;
+  }
+
+  header nav ul li a{
+    font-size: 26px;
+  }
+
+  div.telephon{
+    text-align: center;
+  }
+  span.telephon{
+      font-size: 17px;
+      text-decoration: none;
+    }
+  span.telephon a:hover{
+    font-size: 17px;
+  }
+}
+
+/*................................................................................................*/
+/*.....................................адаптив 900px............................................*/
+/*................................................................................................*/
+@media screen and (max-width: 900px) {
+
+  header nav{
+    max-width: 700px;
+    padding: 0;
+    margin: 0 auto;
+  }
+ 
+  header nav ul li{
+    width: 130px;
+  }
+
+  header nav ul li a{
+    font-size: 26px;
+  }
+  div.telephon{
+    text-align: center;
+  }
+  span.telephon{
+      font-size: 17px;
+    }
+  span.telephon a:hover{
+    font-size: 17px;
+  }
+}
+
+/*................................................................................................*/
+/*.....................................адаптив 600px............................................*/
+/*................................................................................................*/
+@media screen and (max-width: 600px) {
+
+  header nav{
+    max-width: 600px;
+    padding: 0;
+    margin: 0 auto;
+  }
+ 
+  header nav ul li{
+    width: 160px;
+  }
+
+  header nav ul li a{
+    font-size: 25px;
+  }
+
+  header div.Logo h1 hr{
+    width: 360px;
+  }
+
+  header div.Logo h1{
+    margin: 155px auto 0;
+    font-size: 50px;
+  }
+  header div.Logo_margin{
+    margin-bottom: 37px;
+    margin-top: 38px;
+  }
+
+header div.Logo h2{
+    margin: 24px 0 0 0 ;
+    font-size: 26px;
+  }
+
+    div.Sign{
+      max-width: 600px;
+      margin-top: 80px;
+      text-align: center;
+  }
+    a.Sign{
+      padding: 24px 101px;
+      font-size: 25px;
+  } 
+
+    a.kontacts{
+      font-size: 20px;
+    }
+
+    span.telephon{
+      font-size: 17px;
+    }
+    span.telephon a:hover{
+      font-size: 19px;
+    }
+}
+
+/*................................................................................................*/
+/*.....................................адаптив 570px............................................*/
+/*................................................................................................*/
+@media screen and (max-width: 570px) {
+
+  header nav ul li{
+    width: 110px;
+  }
+}
+/*................................................................................................*/
+/*.....................................адаптив 420px............................................*/
+/*................................................................................................*/
+@media screen and (max-width: 420px) {
+
+  header nav{
+    max-width: 400px;
+    margin-left: 20px;
+  }
+  header nav ul li{
+    width: 150px;
+  }
+  header nav ul li a{
+    font-size: 22px;
+  }
+  div.telephon{
+      text-align: center;
+    }
+  span.telephon{
+      font-size: 17px;
+    }
+
+    span.telephon a:hover{
+      font-size: 18px;
+    }
+}
+/*................................................................................................*/
+/*.....................................адаптив 300px............................................*/
+/*................................................................................................*/
+@media screen and (max-width: 300px) {
+
+  header{
+    height: 900px;
+  }
+
+  header nav{
+    max-width: 300px;
+    padding: 0;
+    margin-left: 10px;
+  }
+ 
+  header nav ul li{
+    width: 140px;
+  }
+
+  header nav ul li a{
+    font-size: 25px;
+  }
+
+  header div.Logo h1 hr{
+    width: 280px;
+  }
+
+  header div.Logo h1{
+    margin: 155px auto 0;
+    font-size: 40px;
+  }
+
+header div.Logo h2{
+    font-size: 24px;
+  }
+
+    div.Sign{
+      max-width: 290px;
+      margin-top: 80px;
+  }
+    a.Sign{
+      max-width: 300px;
+      padding: 10px 40px;
+      font-size: 22px;
+  } 
+
+    a.kontacts{
+      font-size: 15px;
+    }
+
+    header nav ul.kontacts{
+     margin: 30px auto 0;
+    }
+
+    header nav ul li.kontacts{
+     width: 60px;
+    }    
+
+    a.kontacts{
+      font-size: 15px;
+    }
+
+    div.telephon{
+      text-align: center;
+    }
+    span.telephon{
+      font-size: 17px;
+    }
+
+    span.telephon a:hover{
+      font-size: 19px;
+    }
+}
+
+/*................................................................................................*/
+/*.....................................адаптив 280px............................................*/
+/*................................................................................................*/
+@media screen and (max-width: 280px) {
+
+  header nav{
+    margin-left: 50px;
+  }
+}

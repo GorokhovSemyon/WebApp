@@ -1,0 +1,459 @@
+body{
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+    height: 1830px;
+	background-image: url(../img/back-registration.svg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+section{
+	width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+section div.menu a{
+    cursor: pointer;
+}
+section div span{
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: 'Red Hat Display', sans-serif;
+}
+.limiter div.container-login100{
+    margin-top: 50px;
+}
+section div.menu a img{
+    height: 68px;
+    cursor: pointer;
+    position: absolute;
+	margin-top: 66px;
+	margin-left: 94px;
+}
+section div.menu a:hover img{
+    height: 78px;
+    transition-duration: 0.15s;
+    margin-top: 61px;
+	margin-left: 89px;
+}
+.reg{
+    margin-left: auto;
+    margin-right: auto;
+}
+section div.menu h1{
+	padding-top: 65px;
+	text-align: center;
+	color: #F0A24D;
+	font-size: 64px;
+	font-weight: 400;
+}
+section div.limiter{
+	margin-top: 62.5px;
+	width: 713px;
+	height: calc(1457px + 64px);
+	border: 3px solid #F0A24D;
+	border-radius: 4px;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+section div.login100-form{
+	width: 506px;
+    margin-top: 20px;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+.dropdown {
+	position: relative;
+}
+
+.dropdown__button {
+    position: relative;
+    display: block;
+    width: 506px;
+    height: 72px;
+    font-size: 24px;
+    font-weight: normal;
+    text-align: left;
+    color:#fff;
+    padding: 25px 35px 0 0;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: 0 0;
+    font-family: 'Red Hat Display', sans-serif;
+}
+.dropdown__button:focus, .dropdown__button--active {
+	outline: none;
+    box-shadow: 0px 0px 10px #585858;
+}
+
+.dropdown img{
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    display: block;
+    pointer-events: none;
+}
+
+.dropdown__list{
+    display: none;
+    position: absolute;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    border-radius: 0 0 6px 6px;
+    background-image: url(../img/background-1.svg);
+    overflow: hidden;
+    width: 100%;
+    z-index: 1;
+    font-size: 24px;
+    font-weight: 300;
+    color:#fff;
+    font-family: 'Red Hat Display', sans-serif;
+}
+.dropdown__list--visible{
+    display: block;
+}
+.dropdown__list-item{
+    margin: 0;
+    padding: 0;
+    height: 40px;
+    font-size: 24px;
+    font-weight: normal;
+    border: 1px solid #585858;
+    border-bottom: 0;
+    padding: 5px 20px;
+    cursor: pointer;
+}
+
+.dropdown__input-hidden{
+    display: none;
+}
+.dropdown__list-item:last-child{
+    border-bottom: 1px solid #585858;
+}
+
+.dropdown__list-item:hover{
+    background: #F0A24D;
+    color:#000;
+}
+
+input {
+    outline: none;
+    border: none;
+    background: 0 0;
+}
+
+.wrap-input100 {
+    width: 100%;
+    position: relative;
+    border-bottom: 1px solid #fff;
+}
+
+.input100 {
+    display: block;
+    width: 506px;
+    width: 100%;
+    height: 72px;
+    background: 0 0;
+    font-size: 24px;
+    font-weight: normal;
+    color: #fff;
+    padding: 0 2px;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.barbers{
+    width: 506px;
+    height: 234px;
+    display: block;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.barbers span{
+    position: relative;
+    display: block;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: 'Red Hat Display', sans-serif;
+	color: #fff;
+}
+.barbers div.flex-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.Master-input-hidden{
+    display: none;
+}
+.flex-item{
+    width: 155px;
+    height: 182px;
+    border: 1px solid  #fff;
+    border-radius: 10px;
+    background: 0 0;
+    cursor: pointer;
+}
+.flex-item:hover{
+    background: #F0A24D;
+}
+.person img{
+    height: 100px;
+    display: block;
+    margin-top: 12px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.person span{
+    margin-top: 9px;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    font-weight: normal;
+    font-family: 'Red Hat Display', sans-serif;
+    color: #fff;
+    text-align: center;
+}
+.person span p{
+    text-align: center;
+}
+
+.time{
+    width: 458px;
+    height: 210px;
+    margin-top: 50px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.time input.time-button{
+    cursor: pointer;
+    width: 92px;
+    height: 45px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background: none;
+
+    font-size: 28px;
+    font-weight: normal;
+    color: #fff;
+    text-align: center;
+    line-height: 45px;
+}
+
+.time input.time-button:hover{
+    background: #F0A24D;
+    border: 1px solid #F0A24D;
+    color: #000;
+}
+
+.time input.col1{
+    /* сверху | справа | снизу | слева */
+    margin-left: 0;
+}
+
+.time input.col4{
+    margin-right: 0;
+}
+
+.time input.str2 {
+    margin-top: calc((210px/4 - 45px)/2);
+}
+
+.time input.str3 {
+    margin-top: calc((210px/4 - 45px)/2);
+}
+
+.time input.str4 {
+    margin-top: calc(210px/4 - 45px);
+}
+
+.wrap-login100-form-btn button{
+    cursor: pointer;
+    display: block;
+	text-align: center;
+	text-decoration: none;
+	background: #F0A24D;
+	width: 506px;
+    height: 75px;
+	border-radius: 32px;
+    text-transform: uppercase;
+	font-size: 26px;
+    font-weight: 500;
+	color: #000;
+	margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #F0A24D;
+}
+.wrap-login100-form-btn button:hover{
+    background: none;
+    color: #F0A24D;
+}
+.calendar{
+    display: block;
+    width: 506px;
+    height: calc(333px + 64px);
+    margin-top: 50px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.calendar-header {
+    background: none;
+    display: block;
+    width: 458px;
+    align-items: center;
+    font-size: 24px;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 600;
+    color: #fff;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.month {
+    text-align: center;
+    width: calc(458px - 13px*2);
+}
+
+.month-picker {
+    display: flex;
+    align-items: center;
+}
+
+.month-change {
+    display: flex;
+    width: 13px;
+    place-items: center;
+    cursor: pointer;
+    justify-content: space-between;
+}
+.month-change:hover {
+    background-color: var(--light-btn);
+    transition:all .2s ease-in-out ;
+    transform: scale(1.12);
+}
+.month-change:hover {
+    color: var(--bg-body);
+}
+
+.calendar-body {
+    pad: 10px;
+    width: 458px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.calendar-week-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    cursor: pointer;
+    color:rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid #fff;
+}
+.calendar-week-days div {
+    display: grid;
+    place-items: center;
+    color: var(--bg-second);
+    font-size: 24px;
+    font-weight: 500;
+    font-family: 'Red Hat Display', sans-serif;
+    height: 41px;
+    width: 64px;
+}
+.calendar-days {
+    width: 310 px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 2px;
+    color: var(--color-txt);
+}
+.calendar-days div.day_current_month {
+    width: 64px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+    animation: to-top 1s forwards;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 400;
+    font-family: 'Red Hat Display', sans-serif;
+    color: #fff;
+    /* top | right | bottom | left */
+}
+.calendar-days div.day_current_month div{
+    width: 41px;
+    height: 40px;
+}
+
+.calendar-days div.day_current_month div:hover {
+    background-color: #F0A24D;
+    border-radius: 15px;
+}
+
+.calendar-days div.day_current_month:hover {
+    color: #000;
+}
+
+.calendar-days div.day_current_month  div.current-date{
+    color: #fff;
+    width: 41px;
+    height: 40px;
+    border: 1px solid #fff;
+    border-radius: 15px;
+    background-color: var(--light-btn);
+}
+
+.calendar-days div.day_current_month  div.current-date:hover{
+    color: #000;
+    background-color: #F0A24D;
+}
+
+.calendar-footer {
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+.calendar-days div.day_past_month {
+    width: 64px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 400;
+    font-family: 'Red Hat Display', sans-serif;
+    color:rgba(255, 255, 255, 0.5);
+    /* top | right | bottom | left */
+    /*padding: 3.5px 10px 3.5px 10px;*/
+}
+.calendar-days div.day_past_month div {
+    width: 41px;
+    height: 40px;
+}
+.Calendar-input-hidden{
+    display: none;
+}

@@ -1,0 +1,154 @@
+<!doctype html>
+{% load static %}
+<html lang="en", lang="ru" >
+  <head>    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="data:,">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="{% static 'appointment/css/appt_bootstrap-grid.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'appointment/css/appt_reset.css' %}">
+    <link rel="stylesheet" href="{% static 'appointment/css/appt_style.css' %}">
+    <title>Запись</title>
+  </head>
+
+  <body>
+  <form action="{% url 'thanks'%}" method="POST">
+    {% csrf_token %}
+    <div class="container-fluid">
+      <section>
+        <div class="row no-gutters menu">
+          <a href="{% url 'home' %}"><img src="{% static 'appointment/img/back_appt.svg' %}"></a>
+          <div class="reg">
+            <h1>Запись</h1>
+          </div>
+        </div>
+        <div class="limiter">
+          <div class="container-login100">
+            <div class="wrap-login100 p-l-50 p-r-50 p-t-72 p-b-50">
+              <div class="login100-form validate-form">
+                <span>Основное</span>
+                <div class="wrap-input100 validate-input" data-validate="Введите Имz">
+                  <input class="input100" type="text" name="name" placeholder="Иван" required>
+                </div>
+                <div class="wrap-input100 validate-input" data-validate="Введите телефон">
+                  <input class="input100" type="text" name="phone" placeholder="+ 7 (988) 250-55-55" required>
+                </div>
+                <div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
+                  <input class="input100" type="text" name="email" placeholder="ivan_petrov@mail.ru" required>
+                </div>
+                <div class="wrap-input100 validate-input" data-validatе = "Выберите услугy">
+                  <div class="dropdown">
+                    <img src="{% static 'appointment/img/arrow_appt.svg' %}">
+                    <div class="dropdown__button">Выберите услугу...</div >
+                    <ul class="dropdown__list">
+                      <li class="dropdown__list-item" value="cut-1">Студенческая стрижка</li>
+                      <li class="dropdown__list-item" value="cut-2">Детская стрижка</li>
+                      <li class="dropdown__list-item" value="cut-3">Стрижка ножницам</li>
+                      <li class="dropdown__list-item" value="cut-4">Бритье головы (опасной бритвой)</li>
+                      <li class="dropdown__list-item" value="cut-5">Укладка</li>
+                      <li class="dropdown__list-item" value="beard-1">Премиальное моделирование бороды</li>
+                      <li class="dropdown__list-item" value="beard-2">Стрижка бороды и усов</li>
+                      <li class="dropdown__list-item" value="beard-3">Моделирование бороды</li>
+                      <li class="dropdown__list-item" value="beard-4">Тонирование бороды</li>
+                      <li class="dropdown__list-item" value="style-1">Чёрная маска</li>
+                      <li class="dropdown__list-item" value="style-2">Коррекция воском</li>
+                      <li class="dropdown__list-item" value="style-3">Химическая завивка волос</li>
+                      <li class="dropdown__list-item" value="style-4">Массаж лица</li>
+                      <li class="dropdown__list-item" value="style-5">Камуфляж седины</li>
+                      <li class="dropdown__list-item" value="style-6">Уход за бровями</li>
+                    </ul>
+                    <input type="text" name="services" value="" class="dropdown__input-hidden">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="barbers">
+            <span>Барберы</span>
+            <div class="flex-container">
+              <button class="barber1 person flex-item" type="button" value="Master1"><img src="{% static 'appointment/img/barber1_appt.svg' %}" id="master1">
+                <span for="master1"> Топ-барбер Саша</span>
+              </button>
+              <button class="barber2 person flex-item" type="button" value="Master2"><img src="{% static 'appointment/img/barber2_appt.svg' %}" id="master2">
+                <span for="master2">Барбер<p>Виктор</p></span>
+              </button>
+              <button class="barber3 person flex-item" type="button" value="Master3"><img src="{% static 'appointment/img/barber3_appt.svg' %}" id="master3">
+                <span for="master3">Барбер<p>Алексей</p></span>
+              </button>
+            </div>
+            <input type="text" name="Master" value="" class="Master-input-hidden">
+          </div>
+          <div class="container">
+            <div class="calendar">
+              <div class="calendar-header">
+                <div class="month-picker" id="month-picker">
+                  <img src="{% static 'appointment/img/arrow-pre-month_appt.svg' %}" class="month-change" id="pre-month">
+                  <span class="month" id="month"> Май </span>
+                  <img src="{% static 'appointment/img/arrow-next-month_appt.svg' %}" class="month-change" id="next-month">
+                </div>
+              </div>
+
+              <div class="calendar-body">
+                <div class="calendar-week-days">
+                  <div>Пн</div>
+                  <div>Вт</div>
+                  <div>Ср</div>
+                  <div>Чт</div>
+                  <div>Пт</div>
+                  <div>Сб</div>
+                  <div>Вс</div>
+                </div>
+                <div class="calendar-days-select"><div class="calendar-days"></div></div>
+              </div>
+              <div class="calendar-footer"></div>
+            </div>
+            <input type="text" name="Date" value="" class="Calendar-input-hidden">
+          </div>
+          <div>
+          <table class="time">
+            <tr>
+              <th><input type="button" class="time-button col1 str1" value="10:00"></th>
+              <th><input type="button" class="time-button col2 str1" value="10:30"></th>
+              <th><input type="button" class="time-button col3 str1" value="12:00"></th>
+              <th><input type="button" class="time-button col4 str1" value="12:30"></th>
+            </tr>
+            <tr>
+              <th><input type="button" class="time-button col1 str2" value="13:00"></th>
+              <th><input type="button" class="time-button col2 str2" value="13:30"></th>
+              <th><input type="button" class="time-button col3 str2" value="14:00"></th>
+              <th><input type="button" class="time-button col4 str2" value="14:30"></th>
+            </tr>
+            <tr>
+              <th><input type="button" class="time-button col1 str3" value="15:30"></th>
+              <th><input type="button" class="time-button col2 str3" value="16:30"></th>
+              <th><input type="button" class="time-button col3 str3" value="17:00"></th>
+              <th><input type="button" class="time-button col4 str3" value="18:00"></th>
+            <tr>
+              <th><input type="button" class="time-button col1 str4" value="18:45"></th>
+              <th><input type="button" class="time-button col2 str4" value="19:30"></th>
+            </tr>
+            </tr>
+          </table>
+            <input type="text" name="Time" value="" class="Time-input-hidden" hidden>
+          </div>
+          <div class="wrap-login100-form-btn">
+            <button type="submit" class="login100-form-btn">
+              Записаться
+            </button>
+<!--          <input type="submit" name="submit" value="Записаться" class="login100-form-btn" required>-->
+
+          </div>
+        </div>
+      </section>
+    </div>
+  </form>
+  <script src="{% static 'appointment/js/appointment.js' %}"></script>
+  </body>
+</html>

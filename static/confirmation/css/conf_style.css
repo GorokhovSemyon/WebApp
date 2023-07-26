@@ -1,0 +1,73 @@
+body{
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to bottom right, #585858, #111111);
+    background-attachment: fixed;
+}
+
+p.About1
+{
+    color: #FFFFFF;
+    font-size: 40px;
+    font-weight: 300;
+    font-family: Roboto;
+    line-height: 50px;
+    text-align: center;
+    margin-top: 90px;
+}
+
+section{
+	width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+section div.menu a{
+    cursor: pointer;   
+}
+
+section div.menu a img{
+    height: 68px; 
+    cursor: pointer;	
+    position: absolute;
+	margin-top: 66px;
+	margin-left: 94px;    
+}
+section div.menu a:hover img{
+    height: 78px;
+    transition-duration: 0.15s;
+    margin-top: 61px;
+	margin-left: 89px;
+}
+.reg{
+    margin-left: auto;
+    margin-right: auto;
+}
+section div.menu h1{
+	padding-top: 65px;
+	text-align: center;
+	color: #F0A24D;
+	font-size: 64px;
+	font-weight: 400;
+}
+section div.limiter{
+	margin-top: 62.5px;
+	width: 544px;
+	height: 300px;
+	border: 2px solid #F0A24D;
+	border-radius: 4px;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (max-width: 600px) {
+    p.About1{
+        font-size: 70px;
+        line-height: 130px;
+        margin-top: 150px;
+    }
+    section div.limiter{
+        width: 1000px;
+        height: 600px;
+        margin-top: 900px;
+    }
+}

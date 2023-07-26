@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en", lang="ru">
+{% load static %}
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="data:,">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
+    <link rel="stylesheet" href="{% static 'main/main_page/css/bootstrap-grid.min.css' %}">
+    <link rel="stylesheet" href="{% static 'main/main_page/css/style_mn.css' %}">
+    <link rel="stylesheet" href="{% static 'main/main_page/css/reset.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'main/main_page/css/my_main.css' %}">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <title>BARBEROK</title>
+
+
+  </head>
+  <body>
+    <header class="container-fluid">
+      <div> <!--class="row no-gutters menu"-->
+        <div class="col-md-12 col-sm-5 navigation">
+          <nav class="d-flex flex-row-reverse">
+            <ul class="p-2">
+              <li><a href="#services">Услуги</a></li>
+              <li><a href="about">О нас</a></li>
+              <li><a href="devs">Разработал</a></li>
+              <li><a href="#contacts">Контакты</a></li>
+              <li><a class="EntrLK" href="login"></a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+
+      <div class="Logo row no-gutters">
+        <div class="col-12">
+          <h1><hr><div class="Logo_margin">BARBEROK</div><hr></h1>
+          <h2>Создай свой имидж</h2>
+        </div>
+      </div>
+
+       <div class="row no-gutters">
+        <div class="col-12 Sign">
+          <a href="appointments" class="Sign">Записаться</a>
+        </div>
+      </div>
+
+      <div class="row no-gutters menu">
+        <div class="col-md-12">
+          <nav class=" kontacts d-flex justify-content-around">
+            <ul class="kontacts">
+              <li class="kontacts"><a href="/" class="kontacts">VK</a></li>
+              <li class="kontacts"><a href="/" class="kontacts">INST</a></li>
+              <li class="kontacts"><a href="/" class="kontacts">TG</a></li>
+              <li class="kontacts"><a href="/" class="kontacts">WA</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+    <a name="services"></a>
+    <div class="row g-0">
+
+      <div class="col-2"></div>
+
+      <div class="col-8 price_list">
+      <div class="col-8 top">
+        <table class="title">
+            <tr>
+             <th><p class="active striz">стрижка</p></th>
+             <th><p class="no-active borod">борода</p></th>
+             <th><p class="no-active uxod">уход</p></th>
+             <th><p class="no-active brit">бритье</p></th>
+            </tr>
+          </table>
+        <div class="strizka act">
+
+          <table class="price">
+          <tr>
+            <td id="name"></td>
+            <td id="barber">Барбер</td>
+            <td id="top-barber">Топ-барбер</td>
+          </tr>
+
+          <tr>
+            <td id="name">Стрижка</td>
+            <td>1000</td>
+            <td>1200</td>
+          </tr>
+
+          <tr>
+            <td id="name">Студенческая стрижка</td>
+            <td>1400</td>
+            <td>1800</td>
+          </tr>
+
+          <tr>
+            <td id="name">Детская стрижка</td>
+            <td>2700</td>
+            <td>2800</td>
+          </tr>
+
+          <tr>
+            <td id="name">Стрижка ножницами</td>
+            <td>1500</td>
+            <td>1600</td>
+          </tr>
+
+          <tr>
+            <td id="name">Бритье головы (опасной бритвой)</td>
+            <td>2500</td>
+            <td>2600</td>
+          </tr>
+
+          <tr>
+            <td id="name">Укладка</td>
+            <td>500</td>
+            <td>600</td>
+          </tr>
+          </table>
+        </div>
+
+        <div class="boroda no-act">
+          <!-- <table class="title">
+            <tr>
+              <th><a class="no-active striz" href="/">стрижка</a></th>
+              <th><a class="active borod" href="/">борода</a></th>
+              <th><a class="no-active uxod" href="/">уход</a></th>
+              <th><a class="no-active brit" href="/">бритье</a></th>
+            </tr>
+          </table> -->
+          <table class="price">
+          <tr>
+            <td id="name"></td>
+            <td id="barber">Барбер</td>
+            <td id="top-barber">Топ-барбер</td>
+          </tr>
+
+          <tr>
+            <td id="name">Премиальное моделирование бороды</td>
+            <td>1000</td>
+            <td>1200</td>
+          </tr>
+
+          <tr>
+            <td id="name">Стрижка бороды и усов</td>
+            <td>1400</td>
+            <td>1800</td>
+          </tr>
+
+          <tr>
+            <td id="name">Моделирование бороды</td>
+            <td>2700</td>
+            <td>2800</td>
+          </tr>
+
+          <tr>
+            <td id="name">Тонирование бороды</td>
+            <td>2500</td>
+            <td>2600</td>
+          </tr>
+          </table>
+        </div>
+        <div class="uhod no-act">
+          <!-- <table class="title">
+            <tr>
+              <th><a class="no-active striz" href="/">стрижка</a></th>
+              <th><a class="no-active borod" href="/">борода</a></th>
+              <th><a class="active uxod" href="/">уход</a></th>
+              <th><a class="no-active brit" href="/">бритье</a></th>
+            </tr>
+          </table> -->
+
+            <table class="price">
+            <tr>
+              <td id="name"></td>
+              <td id="barber">Барбер</td>
+              <td id="top-barber">Топ-барбер</td>
+            </tr>
+
+            <tr>
+              <td id="name">Чёрная маска</td>
+              <td>700</td>
+              <td>100</td>
+            </tr>
+
+            <tr>
+              <td id="name">Коррекция воском</td>
+              <td>400</td>
+              <td>600</td>
+            </tr>
+
+            <tr>
+              <td id="name">Химическая завивка волос</td>
+              <td>2000</td>
+              <td>2200</td>
+            </tr>
+
+            <tr>
+              <td id="name">Укладка</td>
+              <td>400</td>
+              <td>800</td>
+            </tr>
+
+            <tr>
+              <td id="name">Массаж лица</td>
+              <td>1700</td>
+              <td>2100</td>
+            </tr>
+
+            <tr>
+              <td id="name">Камуфляж седины</td>
+              <td>1500</td>
+              <td>1600</td>
+            </tr>
+
+            <tr>
+              <td id="name">Уход за бровями</td>
+              <td>500</td>
+              <td>670</td>
+            </tr>
+            </table>
+        </div>
+        <div class="britie no-act">
+          <!-- <table class="title">
+            <tr>
+              <th><a class="no-active striz" href="/">стрижка</a></th>
+              <th><a class="no-active borod" href="/">борода</a></th>
+              <th><a class="no-active uxod" href="/">уход</a></th>
+              <th><a class="active brit" href="/">бритье</a></th>
+            </tr>
+          </table> -->
+          <table class="price">
+            <tr>
+            <td id="name"></td>
+            <td id="barber">Барбер</td>
+            <td id="top-barber">Топ-барбер</td>
+            </tr>
+
+            <tr>
+              <td id="name">Премиальное бритьё Graham Hill</td>
+              <td>1000</td>
+              <td>1200</td>
+            </tr>
+
+            <tr>
+              <td id="name">Королевское бритье (опасной бритвой)</td>
+              <td>1400</td>
+              <td>6100</td>
+            </tr>
+          </table>
+          </div>
+        </div>
+
+      <div class="col-8 loyalty">
+          <p>Лояльность</p>
+          <div class="loyal">Для новых клиентов<span>скидка 30%</span></div>
+          <div class="loyal">Каждая 5-ая стрижка<span>бесплатно</span></div>
+      </div>
+
+      <div class="col-2"></div>
+
+    </div>
+  </div>
+
+  <div class="slider">
+        <div class="item">
+            <a class="previous" onclick="previousSlide()">&#10094;</a>
+            <img src="{% static 'main/main_page/img/img1.jpg' %}" alt="">
+            <a class="next" onclick="nextSlide()">&#10095;</a>
+        </div>
+
+        <div class="item">
+            <a class="previous" onclick="previousSlide()">&#10094;</a>
+            <img src="{% static 'main/main_page/img/img2.jpg' %}" alt="">
+            <a class="next" onclick="nextSlide()">&#10095;</a>
+        </div>
+
+        <div class="item">
+            <a class="previous" onclick="previousSlide()">&#10094;</a>
+            <img src="{% static 'main/main_page/img/img3.jpg' %}" alt="">
+            <a class="next" onclick="nextSlide()">&#10095;</a>
+        </div>
+
+        <div class="arrow_mobile">
+            <a class="previous_mobile" onclick="previousSlide()">&#10094;</a>
+            <a class="next_mobile" onclick="nextSlide()">&#10095;</a>
+        </div>
+    </div>
+     <section class="container">
+      <a name="contacts"></a>
+       <div class="map1">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4489.138237065606!2d37.67548319357909!3d55.76598690000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54aae7db2a075%3A0xfa5b51a346478c0e!2z0JzQk9Ci0KMg0LjQvC4g0J0u0K0uINCR0LDRg9C80LDQvdCw!5e0!3m2!1sru!2sru!4v1686561114538!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+       <div class="telephon col-md-6">
+        <span class="telephon">Позвоните нам по номеру: <a href="tel:+79911358876">+7(991)-135-88-76</a></span>
+      </div>
+     </section>
+
+  <script type="text/javascript" src="{% static 'main/main_page/js/pagination.js' %}"></script>
+  <script type="text/javascript" src="{% static 'main/main_page/js/csc.js' %}"></script>
+  </body>
+</html>
+
